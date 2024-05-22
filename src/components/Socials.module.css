@@ -1,0 +1,28 @@
+.socials {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin: 20px 0;
+}
+
+.socials li {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 0;       
+}
+
+.socials li:last-of-type {
+  margin-right: 0;
+}
+
+.socials a {
+  transition: color 0.4s, transform 0.4s;
+  display: inline-block;
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+}
+
+.socials a:hover {
+  color: #FF8201;
+  transform: scale(1.2);
+}
