@@ -3,11 +3,11 @@ import type { Component } from 'solid-js';
 import { Socials } from './components/Socials';
 
 import logo from './logo.svg';
-import styles from './App.module.css';
+
 
 const App: Component = () => {
   return (
-    <div class={styles.App}>
+    <div class="app">
       <header class={styles.header}>
         <img src={logo} class={styles.logo} alt="logo" />
       </header>
