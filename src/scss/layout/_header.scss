@@ -58,9 +58,9 @@
       opacity: 0;
       margin-left: 18px;
       margin-bottom: 0;
-      font-size: ems(14px);
-      line-height: 14px;
-      margin-top: 7px;
+      font-size: ems(18px);
+      line-height: 18px;
+      margin-top: 4px;
       font-weight: 300;
       letter-spacing: 1.5px;
       text-transform: uppercase;
@@ -98,8 +98,8 @@
         a{
           transition: color 0.4s;
           display: inline-block;
-          line-height: 13px;
-          font-size: ems(13px);
+          line-height: 18px;
+          font-size: ems(18px);
           text-decoration: none;
           text-transform: uppercase;
           color: $white;

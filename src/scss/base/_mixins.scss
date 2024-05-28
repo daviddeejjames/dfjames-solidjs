@@ -1,3 +1,5 @@
+@use "sass:math";
+
 //
 // Sass Mixins
 //
@@ -5,7 +7,7 @@
 // Convert font values to rem
 @function ems($value){
 	// converts a pixel amount to rems or ems based on the body font size
-	$value: $value / $bodyfont-size + rem;
+	$value: math.div($value, $bodyfont-size) + rem;
 	//$value: $value / $bodysize + em;
 	@return $value;
 }

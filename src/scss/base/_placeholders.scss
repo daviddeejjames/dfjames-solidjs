@@ -28,7 +28,7 @@
 }
 
 // ul.social-icons
-%social-icons{
+%social-icons {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -48,8 +48,8 @@
       }
       transition: color 0.4s, transform 0.4s;
       display: inline-block;
-      font-size: ems(24px);
-      line-height: 24px;
+      font-size: 1.75rem;
+      line-height: 1.75rem;
 
       &:hover{
         @include media_query($tablet-breakpoint){
@@ -62,7 +62,7 @@
   }
 }
 
-%date-wrap{
+%date-wrap {
   color: $primary-accent;
   font-size: ems(14px);
 

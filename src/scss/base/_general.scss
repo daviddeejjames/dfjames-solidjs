@@ -1,14 +1,15 @@
 //
 // General styling for the page
 //
-body{
+body {
   width: 100%;
-  font-size: ems($bodyfont-size);
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: $bodyfont-size;
   font-weight: normal;
   font-style: normal;
   color: $off-black;
   background-color: $site-background-color;
-  background-image: url('../images/bright_squares.png');
+  background-image: url('../assets/bright_squares.png');
   background-attachment: fixed;
 
   h1,
@@ -19,6 +20,9 @@ body{
   h6,
   strong {
     margin-top: 0;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
     font-style: normal;
     color: $heading-color;
   }
@@ -47,6 +51,31 @@ body{
     border: none;
     color: $bodycolor;
   }
+
+  .quattrocento-sans-regular {
+    font-family: "Quattrocento Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .quattrocento-sans-bold {
+    font-family: "Quattrocento Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .quattrocento-sans-regular-italic {
+    font-family: "Quattrocento Sans", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .quattrocento-sans-bold-italic {
+    font-family: "Quattrocento Sans", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
 }
 
 // Main Content Wrap

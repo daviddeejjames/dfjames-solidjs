@@ -1,15 +1,25 @@
-/* @refresh reload */
-import { render } from 'solid-js/web';
 
-import './styles.scss';
-import App from './App';
+import { lazy, ParentComponent } from 'solid-js';
+import { render } from "solid-js/web";
+import { Router, Route } from "@solidjs/router";
+import { MetaProvider } from '@solidjs/meta';
 
-const root = document.getElementById('root');
+import Home from "./pages/Home"
 
-if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
-  throw new Error(
-    'Root element not found. Did you forget to add it to your index.html? Or maybe the id attribute got misspelled?',
-  );
-}
+import './scss/styles.scss';
 
-render(() => <App />, root!);
+const App: ParentComponent = ({ children }) => (
+  <>
+    {children}
+  </>
+);
+
+const root = document.getElementById("root") as unknown as HTMLElement;
+
+render(() => (
+  <MetaProvider>
+    <Router root={App}>
+      <Route path="/" component={Home} />
+    </Router>
+  </MetaProvider>
+), root) ;
