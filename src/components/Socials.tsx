@@ -1,9 +1,6 @@
 import type { Component } from 'solid-js';
-
-import styles from './Socials.module.css';
-
 import {
-  FaBrandsGithubAlt,
+  FaBrandsGithub,
   FaBrandsCodepen,
   FaBrandsItchIo,
   FaBrandsLinkedinIn,
@@ -16,11 +13,11 @@ export const Socials: Component = () => {
   const itchio = 'https://daviddeejjames.itch.io/'
 
   return (
-    <div>
-      <ul class={styles.socials}>
+    <div class="socials">
+      <ul class="social-icons">
         <li>
           <a href={github} target="_blank">
-            <FaBrandsGithubAlt />
+            <FaBrandsGithub />
           </a>
         </li>
         <li>
