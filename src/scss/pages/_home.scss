@@ -54,10 +54,10 @@
         background-color: $primary-accent;
         // TODO: Change photo
         // background-image: url('../assets/photo-of-me.');
-        // background-size: 113%;
+        background-size: 113%;
         width: 290px;
         height: 260px;
-        // transform-origin: 46px 178px; // Better centering of profile image
+        transform-origin: 46px 178px; // Better centering of profile image
       }
     }
 
