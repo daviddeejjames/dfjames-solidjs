@@ -7,6 +7,9 @@ const Navigation: Component = () => (
       <li>
         <a href="/">Home</a>
       </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
     </ul>
   </nav>
 );
@@ -33,7 +36,7 @@ export const PageWrapper: ParentComponent = ({ children }) => {
       />
       <Meta
         name="keywords"
-        content="David James, Melebounre, Front End Developer, Software Developer, Full Stack Developer, solidjs, solid, blog, frontend, reactjs, react, css, scss, sass"
+        content="David James, Melebounre, Narrm, Front End Developer, Software Developer, Full Stack Developer, blog, solidjs, solid, blog, frontend, reactjs, react, css, scss, sass, skateboarder, photographer, creative"
       />
       <Header />
       <div class="content-container">{children}</div>
