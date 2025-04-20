@@ -3,17 +3,19 @@ import {
   FaBrandsGithub,
   FaBrandsCodepen,
   FaBrandsItchIo,
-  FaBrandsLinkedinIn,
-} from 'solid-icons/fa'
+  FaBrandsYoutube,
+  FaBrandsInstagram
+} from 'solid-icons/fa';
 
 export const Socials: Component = () => {
-  const github = 'https://github.com/daviddeejjames/'
-  const linkedin = 'https://au.linkedin.com/in/david-james-614521106/'
-  const codepen = 'https://codepen.io/daviddeejjames/'
-  const itchio = 'https://daviddeejjames.itch.io/'
+  const github = 'https://github.com/daviddeejjames/';
+  const codepen = 'https://codepen.io/daviddeejjames/';
+  const itchio = 'https://daviddeejjames.itch.io/';
+  const instagram = 'https://www.instagram.com/daviddeejjames'
+  const youtube = 'https://www.youtube.com/davidj288';
 
   return (
-    <div class="socials">
+    <div class="Socials">
       <ul class="social-icons">
         <li>
           <a href={github} target="_blank">
@@ -31,11 +33,16 @@ export const Socials: Component = () => {
           </a>
         </li>
         <li>
-          <a href={linkedin} target="_blank">
-            <FaBrandsLinkedinIn />
+          <a href={instagram} target="_blank">
+            <FaBrandsInstagram />
+          </a>
+        </li>
+        <li>
+          <a href={youtube} target="_blank">
+            <FaBrandsYoutube />
           </a>
         </li>
       </ul>
     </div>
-  )
-}
+  );
+};

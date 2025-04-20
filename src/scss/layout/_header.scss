@@ -1,12 +1,12 @@
 //
 // Header styling
 //
-.Header{
-  @include media_query($tablet-breakpoint){
+.Header {
+  @include media_query($tablet-breakpoint) {
     padding-left: 40px;
     padding-right: 40px;
   }
-  @include media_query($mobile-breakpoint){
+  @include media_query($mobile-breakpoint) {
     padding-left: 20px;
     padding-right: 20px;
     animation: none;
@@ -33,14 +33,14 @@
     animation-fill-mode: both;
   }
 
-  .logo-link{
-    @include media_query($mobile-breakpoint){
+  .logo-link {
+    @include media_query($mobile-breakpoint) {
       display: inline-block;
     }
     display: flex;
     justify-content: center;
 
-    .diamond{
+    .diamond {
       transition: transform 0.4s;
       width: 24px;
       height: 24px;
@@ -49,11 +49,13 @@
       transform-origin: 50% 50%;
     }
 
-    .name{
-      @include media_query($tablet-breakpoint){
+    .name {
+      @include media_query($tablet-breakpoint) {
         display: none;
       }
-      transition: transform 0.4s, opacity 0.4s;
+      transition:
+        transform 0.4s,
+        opacity 0.4s;
       transform: translateX(-30px);
       opacity: 0;
       margin-left: 18px;
@@ -67,35 +69,33 @@
       color: $white;
     }
 
-    &:hover{
-
-      .diamond{
+    &:hover {
+      .diamond {
         transform: rotate(135deg);
       }
 
-      .name{
+      .name {
         transform: translateX(0);
         opacity: 1;
       }
     }
   }
 
-
-  .Navigation{
+  .Navigation {
     display: inline-block;
     user-select: none;
 
-    .nav-list{
+    .nav-list {
       margin: 0;
       padding: 0;
       list-style: none;
 
-      li{
+      li {
         display: inline-block;
         margin: 0;
         margin-right: 30px;
 
-        a{
+        a {
           transition: color 0.4s;
           display: inline-block;
           line-height: 18px;
@@ -105,25 +105,23 @@
           color: $white;
           letter-spacing: 1px;
 
-          &:hover{
+          &:hover {
             color: $primary-accent !important;
           }
 
-          &.active{
+          &.active {
             color: $primary-accent;
           }
         }
 
-        &:first-of-type .active{
+        &:first-of-type .active {
           color: $white;
         }
 
-        &:last-of-type{
+        &:last-of-type {
           margin-right: 0;
         }
       }
-
     }
-
   }
 }

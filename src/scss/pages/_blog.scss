@@ -1,0 +1,95 @@
+.blog{
+
+    .blog-post-list{
+  
+      .post{
+        @include media_query($mobile-breakpoint){
+          padding: 20px;
+          animation: none;
+        }
+        @extend %card;
+        animation: slideUp 0.8s 0.2s;
+        animation-fill-mode: both;
+        margin-bottom: 30px;
+        padding: 30px 45px;
+        position: relative;
+        min-height: 200px;
+        display: flex;
+        align-items: center;
+        flex-direction:  column;
+        text-align: left;
+
+        h1 {
+          font-size: ems(45px);
+          text-align: center;
+          margin-bottom: 28px;
+        }
+
+        .image-with-caption-wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          img { 
+            margin-bottom: 10px;
+          }
+
+          .caption {
+            font-size: ems(18px);
+            text-align: center;
+          }
+        }
+  
+        .post-title{
+          @include media_query($tablet-breakpoint){
+            transition: none;
+          }
+          margin: 0;
+          transition: color 0.4s;
+  
+          &:hover{
+            color: $primary-accent;
+          }
+        }
+  
+        .divider{
+          @include media_query($mobile-breakpoint){
+            margin-top: 8px;
+            margin-bottom: 12px;
+          }
+          margin-top: 10px;
+          margin-bottom: 20px;
+        }
+  
+        .excerpt{
+  
+          p:last-of-type{
+            margin-bottom: 0;
+          }
+        }
+  
+        .date-wrap{
+          @extend %date-wrap;
+          position: relative;
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+            
+          .date{
+            @include media_query($mobile-breakpoint){
+              position: relative;
+              top: 2px;
+            }
+          }
+        }
+      }
+  
+      // Cascade the animation-delay for the blog posts
+      @for $i from 1 through 10{
+        .post:nth-child(#{$i}){
+          animation-delay: $i * 0.3s + 0.2s;
+        }
+      }
+    }
+  }

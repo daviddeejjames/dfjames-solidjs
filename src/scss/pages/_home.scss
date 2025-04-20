@@ -1,8 +1,42 @@
 //
 // Homepage styling
 //
-.front-page{
-  @include media_query($mobile-breakpoint){
+@keyframes send-it {
+  0% {
+    transform: translateX(-1000vh);
+  }
+  
+  100% {
+    transform: translateX(1000vh);
+  }
+}
+
+.homepage {
+  overflow: hidden;
+  max-width: 100vw;
+  max-height: 100vh;
+  
+  &:before{
+    @include media_query($mobile-breakpoint) {
+      content: none;
+      animation: none;
+
+    }
+    position: absolute;
+    width: 5000vw;
+    height: 5000vh;
+    content: '';
+    background-color: $site-background-color;
+    background-image: url('../assets/bright_squares.png');
+    background-attachment: fixed;
+    animation-name: send-it;
+    animation-duration: 1700s;
+    pointer-events: none;
+  }
+}
+
+.front-page {
+  @include media_query($mobile-breakpoint) {
     height: auto;
     margin-top: 60px;
     margin-bottom: 40px;
@@ -12,9 +46,10 @@
   height: 100vh;
   justify-content: center;
   align-items: center;
-
-  .card-wrap{
-    @include media_query($mobile-breakpoint){
+  position: relative;
+  
+  .card-wrap {
+    @include media_query($mobile-breakpoint) {
       flex-wrap: wrap;
     }
     @extend %card;
@@ -24,8 +59,8 @@
     position: relative;
 
     // Profile image diamond
-    .image-wrap{
-      @include media_query($mobile-breakpoint){
+    .image-wrap {
+      @include media_query($mobile-breakpoint) {
         animation: none;
         left: 0;
         margin-right: 0;
@@ -38,23 +73,22 @@
       position: relative;
       left: 15px;
 
-      .mask{
-        @include media_query($mobile-breakpoint){
+      .mask {
+        @include media_query($mobile-breakpoint) {
           transform: scale(0.8) rotate(45deg);
         }
-        transform : rotate(45deg);
+        transform: rotate(45deg);
         width: 150px;
         height: 150px;
         overflow: hidden;
       }
 
-      .profile-image{
+      .profile-image {
         transform: rotate(-45deg);
         @extend %bg-image;
         background-color: $primary-accent;
-        // TODO: Change photo
-        // background-image: url('../assets/photo-of-me.');
-        background-size: 113%;
+        background-image: url('../assets/me-actual.png');
+        background-size: 78%;
         width: 290px;
         height: 260px;
         transform-origin: 46px 178px; // Better centering of profile image
@@ -62,8 +96,8 @@
     }
 
     // Text
-    .content{
-      @include media_query($mobile-breakpoint){
+    .content {
+      @include media_query($mobile-breakpoint) {
         animation: none;
       }
       animation: bioSlideRight 0.8s 0.2s;
@@ -73,7 +107,7 @@
 
       // David James
       h2 {
-        @include media_query($mobile-breakpoint){
+        @include media_query($mobile-breakpoint) {
           font-size: 2.2rem;
         }
         font-size: 2.5rem;
@@ -90,10 +124,10 @@
       }
     }
 
-    .socials {
+    .Socials {
       margin-top: 20px;
-      
-      .social-icons{
+
+      .social-icons {
         @extend %social-icons;
       }
     }
