@@ -77,8 +77,7 @@ const Therapy = () => (
       patterns hold us down. Some of our fears are justified as well. We need
       some level of them to survive, to keep our loved ones safe, and avoid
       accidents. But we cannot let them overpower us or prevent us from doing
-      things we have always wanted to do, or prevent us from being the person we
-      truly want to be.
+      things we have always wanted to do, or prevent us from who we truly want to be.
     </p>
     <p>
       If we could all start thinking about our feelings and emotions in any
@@ -113,8 +112,8 @@ const Therapy = () => (
     <p>
       I hope this article empowers at least one person to book in an appointment
       with their GP to get a Mental Health Care Plan and see a therapist, like I
-      did. Both this piece and the Art vs AI rant have made me realize that
-      thanks to my awesome support network and going to therapy, I finally have
+      did. Both this post and the Art vs AI rant have made me realize that
+      thanks to going to therapy and my awesome support network, I finally have
       found my voice and hope this will help you find yours if you haven't already. 
     </p>
     <p>
@@ -123,7 +122,7 @@ const Therapy = () => (
     </p>
     <div class="date-wrap">
         <FaSolidCalendar/>
-        <div class="date">20/04/2025</div>
+        <div class="date">21/04/2025</div>
     </div>
   </div>
 );
