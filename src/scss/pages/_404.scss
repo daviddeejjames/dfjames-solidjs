@@ -1,7 +1,7 @@
-.four-oh-four-page{
-  .page-content{
+.four-oh-four-page {
+  .page-content {
     @extend %card;
-    @include media_query($mobile-breakpoint){
+    @include media_query($mobile-breakpoint) {
       animation: none;
       margin-bottom: 30px;
     }
@@ -9,7 +9,7 @@
     animation-fill-mode: both;
     margin-bottom: 40px;
 
-    p:last-of-type{
+    p:last-of-type {
       margin-bottom: 0;
     }
   }

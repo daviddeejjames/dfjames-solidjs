@@ -3,7 +3,7 @@
 //
 body {
   width: 100%;
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: 'Quattrocento Sans', sans-serif;
   font-size: $bodyfont-size;
   font-weight: normal;
   font-style: normal;
@@ -20,7 +20,7 @@ body {
   h6,
   strong {
     margin-top: 0;
-    font-family: "Work Sans", sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
@@ -41,32 +41,32 @@ body {
     color: $primary-accent;
     -webkit-tap-highlight-color: transparent;
 
-    &:hover{
+    &:hover {
       text-decoration: none;
-      color: lighten($primary-accent,20);
+      color: lighten($primary-accent, 20);
     }
   }
 
   blockquote {
     border: none;
     color: $bodycolor;
-  }  
+  }
 }
 
 // Main Content Wrap
-.content-container{
-  @include media_query($tablet-breakpoint){
+.content-container {
+  @include media_query($tablet-breakpoint) {
     max-width: 100%;
     width: 100%;
     box-sizing: border-box;
     padding-left: 40px;
     padding-right: 40px;
   }
-  @include media_query($mobile-breakpoint){
+  @include media_query($mobile-breakpoint) {
     padding-left: 20px;
     padding-right: 20px;
   }
-  @include media_query($small-mobile-breakpoint){
+  @include media_query($small-mobile-breakpoint) {
     padding-left: 0;
     padding-right: 0;
   }
@@ -74,7 +74,7 @@ body {
   max-width: 960px;
   text-align: center;
 
-  .divider{
+  .divider {
     width: 100px;
     height: 14px;
     border-top: 1px solid #{$primary-accent};

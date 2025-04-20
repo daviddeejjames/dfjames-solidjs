@@ -4,13 +4,13 @@ import {
   FaBrandsCodepen,
   FaBrandsItchIo,
   FaBrandsLinkedinIn,
-} from 'solid-icons/fa'
+} from 'solid-icons/fa';
 
 export const Socials: Component = () => {
-  const github = 'https://github.com/daviddeejjames/'
-  const linkedin = 'https://au.linkedin.com/in/david-james-614521106/'
-  const codepen = 'https://codepen.io/daviddeejjames/'
-  const itchio = 'https://daviddeejjames.itch.io/'
+  const github = 'https://github.com/daviddeejjames/';
+  const linkedin = 'https://au.linkedin.com/in/david-james-614521106/';
+  const codepen = 'https://codepen.io/daviddeejjames/';
+  const itchio = 'https://daviddeejjames.itch.io/';
 
   return (
     <div class="socials">
@@ -37,5 +37,5 @@ export const Socials: Component = () => {
         </li>
       </ul>
     </div>
-  )
-}
+  );
+};

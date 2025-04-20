@@ -9,10 +9,10 @@ const Navigation: Component = () => (
       </li>
     </ul>
   </nav>
-)
+);
 
 const Header: Component = () => {
-  return(
+  return (
     <div class="Header">
       <a class="logo-link" href="/">
         <div class="diamond" />
@@ -21,16 +21,22 @@ const Header: Component = () => {
       <Navigation />
     </div>
   );
-}
+};
 
 export const PageWrapper: ParentComponent = ({ children }) => {
   return (
     <div class="homepage">
       <Title>David James - Software Developer</Title>
-      <Meta name="description" content="David James - Software Developer - Melbourne" />
-      <Meta name="keywords" content="David James, Melebounre, Front End Developer, Software Developer, Full Stack Developer, solidjs, solid, blog, frontend, reactjs, react, css, scss, sass" />
+      <Meta
+        name="description"
+        content="David James - Software Developer - Melbourne"
+      />
+      <Meta
+        name="keywords"
+        content="David James, Melebounre, Front End Developer, Software Developer, Full Stack Developer, solidjs, solid, blog, frontend, reactjs, react, css, scss, sass"
+      />
       <Header />
       <div class="content-container">{children}</div>
     </div>
-  )
-}
+  );
+};

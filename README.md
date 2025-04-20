@@ -8,7 +8,7 @@ Replaces [dfjames-gatsby](https://github.com/daviddeejjames/dfjames-gatsby)
 
 ## Scripts
 
-### `npm install` 
+### `npm install`
 
 Install all the things
 
