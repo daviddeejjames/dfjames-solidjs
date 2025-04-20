@@ -11,11 +11,6 @@
   margin-top: $header-height + 60px;
 
   .post-card {
-    @extend %card;
-    margin-bottom: 30px;
-    text-align: left;
-    position: relative;
-
     h1 {
       @include media_query($mobile-breakpoint) {
         animation: none;
@@ -23,6 +18,11 @@
       }
       text-align: center;
     }
+    @extend %card;
+    margin-bottom: 30px;
+    text-align: left;
+    position: relative;
+
 
     .divider {
       @include media_query($mobile-breakpoint) {

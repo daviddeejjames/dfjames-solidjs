@@ -26,9 +26,9 @@ const Header: Component = () => {
   );
 };
 
-export const PageWrapper: ParentComponent = ({ children }) => {
+export const PageWrapper: ParentComponent = ({ isHomepage = false, children }) => {
   return (
-    <div class="homepage">
+    <div class={isHomepage ? 'homepage' : ''}>
       <Title>David James - Software Developer</Title>
       <Meta
         name="description"
@@ -36,7 +36,7 @@ export const PageWrapper: ParentComponent = ({ children }) => {
       />
       <Meta
         name="keywords"
-        content="David James, Melebounre, Narrm, Front End Developer, Software Developer, Full Stack Developer, blog, solidjs, solid, blog, frontend, reactjs, react, css, scss, sass, skateboarder, photographer, creative"
+        content="David James, Melbounre, Narrm, Front End Developer, Software Developer, Full Stack Developer, blog, solidjs, solid, blog, frontend, reactjs, react, css, scss, sass, skateboarder, photographer, creative"
       />
       <Header />
       <div class="content-container">{children}</div>

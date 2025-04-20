@@ -5,12 +5,14 @@ import { Socials } from '../components/Socials';
 //
 const Home = () => {
   return (
-    <PageWrapper>
+    <PageWrapper isHomepage>
       <div class="front-page">
         <div class="card-wrap">
           <div class="image-wrap">
             <div class="mask">
-              <div class="profile-image"></div>
+              <div class="profile-image">
+                
+              </div>
             </div>
           </div>
           <div class="content">

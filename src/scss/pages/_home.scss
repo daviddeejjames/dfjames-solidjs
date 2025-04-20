@@ -3,11 +3,30 @@
 //
 @keyframes send-it {
   0% {
-    transform: translateY(-1000vh);
+    transform: translateX(-1000vh);
   }
   
   100% {
-    transform: translateY(1000vh);
+    transform: translateX(1000vh);
+  }
+}
+
+.homepage {
+  overflow: hidden;
+  max-width: 100vw;
+  max-height: 100vh;
+  
+  &:before{
+    position: absolute;
+    width: 5000vw;
+    height: 5000vh;
+    content: '';
+    background-color: $site-background-color;
+    background-image: url('../assets/bright_squares.png');
+    background-attachment: fixed;
+    animation-name: send-it;
+    animation-duration: 1700s;
+    pointer-events: none;
   }
 }
 
@@ -24,19 +43,6 @@
   align-items: center;
   position: relative;
   
-  &:before{
-    position: absolute;
-    width: 5000vh;
-    height: 5000vh;
-    content: '';
-    background-color: $site-background-color;
-    background-image: url('../assets/bright_squares.png');
-    background-attachment: fixed;
-    animation-name: send-it;
-    animation-duration: 1000s;
-    pointer-events: none;
-  }
-
   .card-wrap {
     @include media_query($mobile-breakpoint) {
       flex-wrap: wrap;
@@ -76,9 +82,8 @@
         transform: rotate(-45deg);
         @extend %bg-image;
         background-color: $primary-accent;
-        // TODO: Change photo
-        // background-image: url('../assets/photo-of-me.');
-        background-size: 113%;
+        background-image: url('../assets/me-actual.png');
+        background-size: 78%;
         width: 290px;
         height: 260px;
         transform-origin: 46px 178px; // Better centering of profile image
