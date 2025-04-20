@@ -2,17 +2,26 @@ const Therapy = () => (
   <div>
     <h1>Why should I go to therapy?</h1>
     <div class="image-with-caption-wrapper">
-        <img src='src/assets/sopranos.jpeg' alt="Dr. Jennifer Melfi and Tony Soprano having a chat" />
-        <p class="caption">Dr. Jennifer Melfi and Tony Soprano having a chat</p>
-    </div> 
+      <img
+        src="src/assets/sopranos.jpeg"
+        alt="Dr. Jennifer Melfi and Tony Soprano having a chat"
+      />
+      <p class="caption">Dr. Jennifer Melfi and Tony Soprano having a chat</p>
+    </div>
     <p>
-      After my Art vs AI rant on Instagram the other day (here) a few people
-      were concerned about my wellbeing, and rightfully so because its a little
-      out of character for me to go on rants, mainly because I don't think
-      people will generally listen to what I have to say. But after some really
-      nice and heartfelt comments I felt empowered to write about something else
-      that has been on my mind lately and that is the stigma of going to
-      therapy.
+      After my Art vs AI rant on Instagram the other day (
+      <a
+        href="https://www.instagram.com/stories/highlights/18083085673724106/"
+        target="_blank"
+      >
+        here
+      </a>
+      ) a few people were concerned about my wellbeing, and rightfully so
+      because its a little out of character for me to go on rants, mainly
+      because I don't think people will generally listen to what I have to say.
+      But after some really nice and heartfelt comments I felt empowered to
+      write about something else that has been on my mind lately and that is the
+      stigma of going to therapy.
     </p>
     <p>
       Therapy is an interesting topic because I believe my parents' generation
@@ -43,9 +52,14 @@ const Therapy = () => (
       sad or happy? Angry or calm? Scared or strong? Hated or loved.
     </p>
     <div class="image-with-caption-wrapper">
-        <img src='src/assets/gom-jabbar-dune.jpeg' alt="Gom Jabbar and Paul Atreides - Test of fear - Dune  2021 (film)" />
-        <p class="caption">Gom Jabbar and Paul Atreides - Test of fear - Dune  2021 (film)</p>
-    </div> 
+      <img
+        src="src/assets/gom-jabbar-dune.jpeg"
+        alt="Gom Jabbar and Paul Atreides - Test of fear - Dune  2021 (film)"
+      />
+      <p class="caption">
+        Gom Jabbar and Paul Atreides - Test of fear - Dune 2021 (film)
+      </p>
+    </div>
     <blockquote>
       "<strong>I</strong> must not fear. Fear is the mind-killer. Fear is the
       little-death that brings total obliteration. <strong>I</strong> will face
@@ -97,7 +111,7 @@ const Therapy = () => (
     <p>
       I hope this article empowers at least one person to book in an appointment
       with their GP to get a Mental Health Care Plan and see a therapist, like I
-      did. Both this piece and the Art vs AI rant have made me realise that
+      did. Both this piece and the Art vs AI rant have made me realize that
       thanks to my awesome support network and going to therapy, I finally have
       found my voice and hope this will help you find yours.
     </p>
