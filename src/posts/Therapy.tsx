@@ -3,7 +3,7 @@ const Therapy = () => (
     <h1>Why should I go to therapy?</h1>
     <div class="image-with-caption-wrapper">
       <img
-        src="src/assets/sopranos.jpeg"
+        src="/sopranos.png"
         alt="Dr. Jennifer Melfi and Tony Soprano having a chat"
       />
       <p class="caption">Dr. Jennifer Melfi and Tony Soprano having a chat</p>
@@ -53,7 +53,7 @@ const Therapy = () => (
     </p>
     <div class="image-with-caption-wrapper">
       <img
-        src="src/assets/gom-jabbar-dune.jpeg"
+        src="/gom-jabbar-dune.png"
         alt="Gom Jabbar and Paul Atreides - Test of fear - Dune  2021 (film)"
       />
       <p class="caption">
@@ -63,8 +63,7 @@ const Therapy = () => (
     <blockquote>
       "<strong>I</strong> must not fear. Fear is the mind-killer. Fear is the
       little-death that brings total obliteration. <strong>I</strong> will face
-      my fear.
-      <strong>I</strong> will permit it to pass over <strong>me</strong> and
+      my fear. <strong>I</strong> will permit it to pass over <strong>me</strong> and
       through <strong>me</strong>. And when it has gone past <strong>I</strong>{' '}
       will turn the inner eye to see its path. Where the fear has gone there
       will be nothing. Only <strong>I</strong> will remain." - Frank Herbert,
