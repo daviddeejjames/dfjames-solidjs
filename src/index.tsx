@@ -11,13 +11,17 @@ import './scss/styles.scss';
 
 const routes = [
   {
+    path: '/blog',
+    component: lazy(() => import('./pages/Blog')),
+  },
+  {
     path: '/',
     component: lazy(() => import('./pages/Home')),
   },
   {
-    path: '/blog',
-    component: lazy(() => import('./pages/Blog')),
-  },
+    path: '*404',
+    component: lazy(() => import('./pages/404'))
+  }
 ];
 
 render(
