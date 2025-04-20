@@ -6,9 +6,9 @@ const Therapy = () => (
     <div class="image-with-caption-wrapper">
       <img
         src="/sopranos.png"
-        alt="Dr. Jennifer Melfi and Tony Soprano having a chat"
+        alt="Dr. Jennifer Melfi and Tony Soprano having a chat - The Sopranos (1999)"
       />
-      <p class="caption">Dr. Jennifer Melfi and Tony Soprano having a chat</p>
+      <p class="caption">Dr. Jennifer Melfi and Tony Soprano having a chat - The Sopranos (1999)</p>
     </div>
     <p>
       After my{' '}
@@ -50,7 +50,7 @@ const Therapy = () => (
       questions - the exact same way a therapist would. Why do I feel this way
       about that? Why does this particular thing, person or event make me feel
       sad or happy? Angry or calm? Scared or strong? Hated or loved? 
-      Moves away? Or moves towards the person you want to be?
+      Pushing away? Or pushing towards... the person you want to be?
     </p>
     <div class="image-with-caption-wrapper">
       <img
@@ -103,8 +103,9 @@ const Therapy = () => (
     <p>
       My wife said to me once "If you don't cry at therapy, did you even go to
       therapy?" and she's absolutely right, because you will be uncovering a lot
-      of ground... uncomfortable things will come out and that is all part of
-      it! Do not see it as a weakness, you will feel stronger and a hell of a
+      of ground.. . uncomfortable things will come out and that is all part of
+      it!<br />
+      Do not see it as a weakness, you will feel stronger and a hell of a
       lot happier that you did. No pain, no gain, as they say. Why do you think
       there is always a box of tissues, right in front of you, in the room?
       (Even in Tony Soprano's session above!)
@@ -114,7 +115,7 @@ const Therapy = () => (
       with their GP to get a Mental Health Care Plan and see a therapist, like I
       did. Both this piece and the Art vs AI rant have made me realize that
       thanks to my awesome support network and going to therapy, I finally have
-      found my voice and hope this will help you find yours.
+      found my voice and hope this will help you find yours if you haven't already. 
     </p>
     <p>
       Thanks again! <br />
