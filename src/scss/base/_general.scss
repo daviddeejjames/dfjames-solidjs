@@ -12,6 +12,7 @@ body {
   position: relative;
   background-color: $site-background-color;
   background-image: url('../assets/bright_squares.png');
+  overflow: hidden;
   
   h1,
   h2,

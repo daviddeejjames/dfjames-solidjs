@@ -1,14 +1,16 @@
 import type { Component, ParentComponent } from 'solid-js';
 import { Title, Meta } from '@solidjs/meta';
+import { A } from '@solidjs/router';
+const checkActive = (path: string) => path == window.location.pathname;
 
 const Navigation: Component = () => (
   <nav class="Navigation">
     <ul class="nav-list">
       <li>
-        <a href="/">Home</a>
+        <A href="/">Home</A>
       </li>
       <li>
-        <a href="/blog">Blog</a>
+        <A href="/blog">Blog</A>
       </li>
     </ul>
   </nav>
@@ -26,7 +28,10 @@ const Header: Component = () => {
   );
 };
 
-export const PageWrapper: ParentComponent = ({ isHomepage = false, children }) => {
+export const PageWrapper: ParentComponent = ({
+  isHomepage = false,
+  children,
+}) => {
   return (
     <div class={isHomepage ? 'homepage' : ''}>
       <Title>David James - Software Developer</Title>

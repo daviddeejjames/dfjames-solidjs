@@ -21,7 +21,7 @@ const Home = () => {
               <h3>Software Developer</h3>
               <p>
                 Software builder and passionate about all things web. Also a CSS
-                fanatic, photographer and skateboarder.
+                fan, making games in Godot, film photographer and skateboarder.
               </p>
             </div>
             <Socials />

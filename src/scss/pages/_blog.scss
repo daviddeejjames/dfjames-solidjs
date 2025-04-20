@@ -70,24 +70,12 @@
         }
   
         .date-wrap{
-          @include media_query($tablet-breakpoint){
-            right: -114px;
-          }
-          @include media_query($mobile-breakpoint){
-            transform: none;
-            position: relative;
-            top: 0;
-            right: 0;
-            width: auto;
-            margin-bottom: 10px;
-          }
           @extend %date-wrap;
-          position: absolute;
-          transform: rotate(90deg);
-          top: 75px;
-          right: -122px;
-          width: 200px;
-  
+          position: relative;
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+            
           .date{
             @include media_query($mobile-breakpoint){
               position: relative;

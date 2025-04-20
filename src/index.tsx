@@ -1,4 +1,4 @@
-import { lazy, ParentComponent } from 'solid-js';
+import { ParentComponent } from 'solid-js';
 import { render } from 'solid-js/web';
 import { Router, Route } from '@solidjs/router';
 import { MetaProvider } from '@solidjs/meta';
