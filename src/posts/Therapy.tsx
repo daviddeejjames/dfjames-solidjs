@@ -6,9 +6,9 @@ const Therapy = () => (
     <div class="image-with-caption-wrapper">
       <img
         src="/sopranos.png"
-        alt="Dr. Jennifer Melfi and Tony Soprano having a chat"
+        alt="Dr. Jennifer Melfi and Tony Soprano having a chat - The Sopranos (1999)"
       />
-      <p class="caption">Dr. Jennifer Melfi and Tony Soprano having a chat</p>
+      <p class="caption">Dr. Jennifer Melfi and Tony Soprano having a chat - The Sopranos (1999)</p>
     </div>
     <p>
       After my{' '}
@@ -50,7 +50,7 @@ const Therapy = () => (
       questions - the exact same way a therapist would. Why do I feel this way
       about that? Why does this particular thing, person or event make me feel
       sad or happy? Angry or calm? Scared or strong? Hated or loved? 
-      Moves away? Or moves towards the person you want to be?
+      Pushing away? Or pushing towards... the person you want to be?
     </p>
     <div class="image-with-caption-wrapper">
       <img
@@ -77,8 +77,7 @@ const Therapy = () => (
       patterns hold us down. Some of our fears are justified as well. We need
       some level of them to survive, to keep our loved ones safe, and avoid
       accidents. But we cannot let them overpower us or prevent us from doing
-      things we have always wanted to do, or prevent us from being the person we
-      truly want to be.
+      things we have always wanted to do, or prevent us from who we truly want to be.
     </p>
     <p>
       If we could all start thinking about our feelings and emotions in any
@@ -103,8 +102,9 @@ const Therapy = () => (
     <p>
       My wife said to me once "If you don't cry at therapy, did you even go to
       therapy?" and she's absolutely right, because you will be uncovering a lot
-      of ground... uncomfortable things will come out and that is all part of
-      it! Do not see it as a weakness, you will feel stronger and a hell of a
+      of ground.. . uncomfortable things will come out and that is all part of
+      it!<br />
+      Do not see it as a weakness, you will feel stronger and a hell of a
       lot happier that you did. No pain, no gain, as they say. Why do you think
       there is always a box of tissues, right in front of you, in the room?
       (Even in Tony Soprano's session above!)
@@ -112,9 +112,9 @@ const Therapy = () => (
     <p>
       I hope this article empowers at least one person to book in an appointment
       with their GP to get a Mental Health Care Plan and see a therapist, like I
-      did. Both this piece and the Art vs AI rant have made me realize that
-      thanks to my awesome support network and going to therapy, I finally have
-      found my voice and hope this will help you find yours.
+      did. Both this post and the Art vs AI rant have made me realize that
+      thanks to going to therapy and my awesome support network, I finally have
+      found my voice and hope this will help you find yours if you haven't already. 
     </p>
     <p>
       Thanks again! <br />
@@ -122,7 +122,7 @@ const Therapy = () => (
     </p>
     <div class="date-wrap">
         <FaSolidCalendar/>
-        <div class="date">20/04/2025</div>
+        <div class="date">21/04/2025</div>
     </div>
   </div>
 );
